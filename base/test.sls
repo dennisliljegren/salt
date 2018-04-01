@@ -1,3 +1,0 @@
-dennis:
-  user.present:
-    

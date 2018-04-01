@@ -1,0 +1,6 @@
+Skapar ett hashat lösenord. i detta fall är 'password' lösenordet. Det efter är en randomnyckel som används.
+sudo python -c "import crypt; print crypt.crypt('password', '\$6\$SALTsalt')"
+
+>> $6$SALTsalt$UiZikbV3VeeBPsg8./Q5DAfq9aj7CVZMDU6ffBiBLgUEpxv7LMXKbcZ9JSZnYDrZQftdG319XkbLVMvWcF/Vr/
+används för att sätta lösenordet i state-files eller direkt i kommandot.
+sudo salt '*' shadow.set_password dennis $6$SALTsalt$UiZikbV3VeeBPsg8./Q5DAfq9aj7CVZMDU6ffBiBLgUEpxv7LMXKbcZ9JSZnYDrZQftdG319XkbLVMvWcF/Vr/
