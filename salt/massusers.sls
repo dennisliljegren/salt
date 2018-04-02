@@ -14,7 +14,7 @@ Create test directory for {{ usr }}:
 deploy the textdokument file to {{ usr }}:
   file.managed:
     - name: /home/{{ usr }}/test/textdokument.hemlig
-    - source: salt://templates/textdokument.hemlig
+    - source: salt://files/textdokument.hemlig
     - user: {{ usr }}
     - group: {{ usr }}
     - mode: 755
