@@ -1,5 +1,5 @@
 base:
-  'G@os:Ubuntu':
+  '*SALT*':
     - add_ssh_key
     - default_programs
     - massusers
