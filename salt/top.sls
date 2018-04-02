@@ -1,5 +1,5 @@
 base:
-  'os:Ubuntu':
+  'G@os:Ubuntu':
     - add_ssh_key
     - default_programs
     - massusers
