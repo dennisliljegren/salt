@@ -4,4 +4,4 @@ Install default packages:
       - rsync
       - lftp
       - curl
-      - vim
+      - nmap

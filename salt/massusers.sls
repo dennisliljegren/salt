@@ -10,11 +10,11 @@ Create test directory for {{ usr }}:
     - name: /home/{{ usr }}/test
     - user: {{ usr }}
     - group: {{ usr }}
-    - mode: 755  
+    - mode: 755
 deploy the textdokument file to {{ usr }}:
   file.managed:
     - name: /home/{{ usr }}/test/textdokument.hemlig
-    - source: salt://textdokument.hemlig
+    - source: salt://templates/textdokument.hemlig
     - user: {{ usr }}
     - group: {{ usr }}
     - mode: 755
